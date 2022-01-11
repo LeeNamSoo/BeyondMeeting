@@ -29,6 +29,19 @@
           <div class="mobile-sidebar-tool-wrapper">
             <div class="logo-wrapper"><div class="ic ic-logo"/></div>
             <el-button type="primary" class="mobile-sidebar-btn login-btn" @click="clickLogin">로그인</el-button>
+    <!-- <ul>
+      <li @click="kakaoLogin">
+          <a href="javascript:void(0)">
+              <span>카카오 로그인</span>
+          </a>
+      </li>
+      <li @click="kakaoLogout">
+          <a href="javascript:void(0)">
+              <span>카카오 로그아웃</span>
+          </a>
+      </li>
+    </ul> -->
+
             <el-button class="mobile-sidebar-btn register-btn">회원가입</el-button>
           </div>
           <el-menu
@@ -113,6 +126,41 @@ export default {
     const changeCollapse = () => {
       state.isCollapse = !state.isCollapse
     }
+  //카카오로그인
+   const kakaoLogin =function() {
+      Kakao.Auth.login({
+        success: function (response) {
+          Kakao.API.request({
+            url: '/v2/user/me',
+            success: function (response) {
+              console.log(response)
+            },
+            fail: function (error) {
+              console.log(error)
+            },
+          })
+        },
+        fail: function (error) {
+          console.log(error)
+        },
+      })
+    }
+
+  //카카오로그아웃  
+  const kakaoLogout = function () {
+      if (Kakao.Auth.getAccessToken()) {
+        Kakao.API.request({
+          url: '/v1/user/unlink',
+          success: function (response) {
+            console.log(response)
+          },
+          fail: function (error) {
+            console.log(error)
+          },
+        })
+        Kakao.Auth.setAccessToken(undefined)
+      }
+    }  
 
     return { state, menuSelect, clickLogo, clickLogin, changeCollapse }
   }

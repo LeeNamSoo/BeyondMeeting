@@ -1,1 +1,35 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>ssafy-vue</title><link href="/css/app.80f35f85.css" rel="preload" as="style"><link href="/css/chunk-vendors.b8a9ac7a.css" rel="preload" as="style"><link href="/js/app.72d5305c.js" rel="preload" as="script"><link href="/js/chunk-vendors.7f2d107e.js" rel="preload" as="script"><link href="/css/chunk-vendors.b8a9ac7a.css" rel="stylesheet"><link href="/css/app.80f35f85.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but ssafy-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.7f2d107e.js"></script><script src="/js/app.72d5305c.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><title>ssafy-vue</title><link href="/css/app.80f35f85.css" rel="preload" as="style"><link href="/css/chunk-vendors.b8a9ac7a.css" rel="preload" as="style"><link href="/js/app.5d1d224d.js" rel="preload" as="script"><link href="/js/chunk-vendors.7f2d107e.js" rel="preload" as="script"><link href="/css/chunk-vendors.b8a9ac7a.css" rel="stylesheet"><link href="/css/app.80f35f85.css" rel="stylesheet"></head><body><ul><li onclick="kakaoLogin();"><a href="javascript:void(0)"><span>카카오 로그인</span></a></li><li onclick="kakaoLogout();"><a href="javascript:void(0)"><span>카카오 로그아웃</span></a></li></ul><noscript><strong>We're sorry but ssafy-vue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/js/chunk-vendors.7f2d107e.js"></script><script src="/js/app.5d1d224d.js"></script></body><script src="https://developers.kakao.com/sdk/js/kakao.js"></script><script>Kakao.init('523dcea392a7d95c0174ff39592a17c9'); //발급받은 키 중 javascript키를 사용해준다.
+  console.log(Kakao.isInitialized()); // sdk초기화여부판단
+  function kakaoLogin() {
+    Kakao.Auth.login({
+      success: function (response) {
+        Kakao.API.request({
+          url: '/v2/user/me',
+          success: function (response) {
+        	  console.log(response)
+          },
+          fail: function (error) {
+            console.log(error)
+          },
+        })
+      },
+      fail: function (error) {
+        console.log(error)
+      },
+    })
+  }
+//카카오로그아웃  
+function kakaoLogout() {
+    if (Kakao.Auth.getAccessToken()) {
+      Kakao.API.request({
+        url: '/v1/user/unlink',
+        success: function (response) {
+        	console.log(response)
+        },
+        fail: function (error) {
+          console.log(error)
+        },
+      })
+      Kakao.Auth.setAccessToken(undefined)
+    }
+  }</script></html>

@@ -1,19 +1,20 @@
 <template>
   <el-dialog custom-class="login-dialog" title="로그인" v-model="state.dialogVisible" @close="handleClose">
-    <el-form :model="state.form" :rules="state.rules" ref="loginForm" :label-position="state.form.align">
+    <!-- <el-form :model="state.form" :rules="state.rules" ref="loginForm" :label-position="state.form.align">
       <el-form-item prop="id" label="아이디" :label-width="state.formLabelWidth" >
         <el-input v-model="state.form.id" autocomplete="off"></el-input>
       </el-form-item>
       <el-form-item prop="password" label="비밀번호" :label-width="state.formLabelWidth">
         <el-input v-model="state.form.password" autocomplete="off" show-password></el-input>
       </el-form-item>
-    </el-form>
+    </el-form> -->
     <template #footer>
       <span class="dialog-footer">
         <el-button type="primary" @click="clickLogin">로그인</el-button>
       </span>
     </template>
   </el-dialog>
+
 </template>
 <style>
 .login-dialog {
@@ -94,29 +95,31 @@ export default {
       // console.log(loginForm.value)
     })
 
-    const clickLogin = function () {
-      // 로그인 클릭 시 validate 체크 후 그 결과 값에 따라, 로그인 API 호출 또는 경고창 표시
-      loginForm.value.validate((valid) => {
-        if (valid) {
-          console.log('submit')
-          store.dispatch('root/requestLogin', { id: state.form.id, password: state.form.password })
-          .then(function (result) {
-            alert('accessToken: ' + result.data.accessToken)
-          })
-          .catch(function (err) {
-            alert(err)
-          })
-        } else {
-          alert('Validate error!')
-        }
-      });
-    }
+    // const clickLogin = function () {
+    //   // 로그인 클릭 시 validate 체크 후 그 결과 값에 따라, 로그인 API 호출 또는 경고창 표시
+    //   loginForm.value.validate((valid) => {
+    //     if (valid) {
+    //       console.log('submit')
+    //       store.dispatch('root/requestLogin', { id: state.form.id, password: state.form.password })
+    //       .then(function (result) {
+    //         alert('accessToken: ' + result.data.accessToken)
+    //       })
+    //       .catch(function (err) {
+    //         alert(err)
+    //       })
+    //     } else {
+    //       alert('Validate error!')
+    //     }
+    //   });
+    // }
 
     const handleClose = function () {
       state.form.id = ''
       state.form.password = ''
       emit('closeLoginDialog')
     }
+
+   
 
     return { loginForm, state, clickLogin, handleClose }
   }

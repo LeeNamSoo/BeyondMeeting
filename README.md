@@ -269,3 +269,9 @@ git checkout <브랜치이름>
 git push origin <브랜치이름>
 ```
 
+## cmd 에서 mysql 실행하기
+환경변수 > 시스템 변수 > path에 아래처럼 bin 파일경로 추가해주기
+``` C:\Program Files\MySQL\MySQL Server 8.0\bin 
+```
+
+```

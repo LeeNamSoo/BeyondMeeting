@@ -52,3 +52,88 @@
 ## 프로젝트 상세 설명
 
 // 개발 환경, 기술 스택, 시스템 구성도, ERD, 기능 상세 설명 등
+
+
+# 0110
+
+### 개발환경설정
+
+clone 코드를 가져와 임포트
+
+1. Back-end
+    - java
+    - database
+    - IntelliJ
+2. Front-end
+    - Node JS
+    - VS Code
+    - 프로젝트 Dependencieds 설치
+        
+        ```bash
+        npm install
+        ```
+        
+        오류시 다음과 같이 명령어 실행
+        
+        ```bash
+        npm install node-sass
+        npm rebuild node-sass
+        ```
+        
+    - 프로젝트 Dev. 모드 실행
+        
+        ```bash
+        npm run serve
+        ```
+        
+    - 프론트엔드 빌드
+        
+        ```bash
+        npm run build
+        ```
+        
+3. 통합빌드(프론트&백) 및 실행 
+    - 통합빌드하기위해 백엔드 프로젝트 경로에서 다음명령어실행
+    
+    ```bash
+    gradlew clean build
+    ```
+    
+    → /backend/build/libs 폴더에 .jar 파일 생성되었음.
+    
+    - 통합 빌드 된 Spring Boot Application 구동을 위해 .jar가 있는 폴더 경로에서 다음 명령 실행
+    
+    ```bash
+    java -jar ~~~.jar
+    ```
+    
+    - [localhost:8080](http://localhost:8080) 에 접속하여 서비스 구동 확인
+    
+4. 공통프로젝트 기획에 참고할 회의기법 조사
+    
+    내가 관심이 간 회의기법은 KJ 기법
+    
+    [KJ 기법(친화도 분석법) - 진주](https://www.notion.so/KJ-8bc770e378284033997417ca50c8b459)
+
+# 0111
+
+### Git 저장소 주소 repository 변경하기
+``` bash
+git remote set-url origin <새로운git url>
+
+``` 
+### 브랜치 생성
+``` bash
+git branch <브랜치이름>
+```
+
+### 브랜치로 이동
+``` bash
+git checkout <브랜치이름>
+```
+
+### 브랜치에서 push
+``` bash
+git push origin <브랜치이름>
+```
+

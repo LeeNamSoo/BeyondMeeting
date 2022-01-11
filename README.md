@@ -64,6 +64,7 @@ clone 코드를 가져와 임포트
     - java
     - database
     - IntelliJ
+
 2. Front-end
     - Node JS
     - VS Code
@@ -125,6 +126,7 @@ clone 코드를 가져와 임포트
     7. 타이틀 카드들을 붙이고 그룹을 만드는 작업을 반복~~~~~~~~~~~
     8. 그룹 간의 관계를 생각하며 도표화 또는 문장화하여 정리하기
 
+
     - K J 법을 위한 주의사항
 
     (1) 합리적인 분류법이 무엇인가에 대해 토론하거나 시간을 낭비하지 말고 각자 느끼는 대로 신속반응 하도록 한다.
@@ -150,7 +152,7 @@ clone 코드를 가져와 임포트
 
     > 출처
     [https://blog.daum.net/nagaiaida/8182904](https://blog.daum.net/nagaiaida/8182904), 
-    [https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=postsent&logNo=220694490016](https://m.blog.naver.com/PostView.naver?      isHttpsRedirect=true&blogId=postsent&logNo=220694490016)
+    [https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=postsent&logNo=220694490016](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=postsent&logNo=220694490016)
 
 
 # 0111

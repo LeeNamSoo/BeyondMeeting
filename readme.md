@@ -4,13 +4,15 @@
 
 ### 폴더의 경로로 cmd 켜기
 
-![image-20220111155616570](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111155616570.png)
+![image-20220111155616570](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111155616570.png)
+
+C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets
 
 ---
 
 
 
-![image-20220111140852028](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111140852028.png)
+![image-20220111140852028](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111140852028.png)
 
 명세서에 나와있는데로 진행을했는데 파일명이 backend-java 로 되어있어서
 
@@ -18,17 +20,17 @@
 
 그래서 폴더명을 다시 변경해 주면
 
-![image-20220111120655740](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111120655740.png)
+![image-20220111120655740](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111120655740.png)
 
-![image-20220111141059598](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111141059598.png)
+![image-20220111141059598](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111141059598.png)
 
-![image-20220111141113288](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111141113288.png)
+![image-20220111141113288](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111141113288.png)
 
 생전처음 스프링본 모습!!
 
-![image-20220111141133844](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111141133844.png)
+![image-20220111141133844](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111141133844.png)
 
-![image-20220111141158552](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111141158552.png)
+![image-20220111141158552](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111141158552.png)
 
 행복하게 잘 작동하는 모습을 볼 수 있다.
 
@@ -56,7 +58,7 @@ npm run build
 
 를 하면 산출물이 
 
-![image-20220111141238592](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111141238592.png)
+![image-20220111141238592](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111141238592.png)
 
 와 같이 잘 생성되어있다.
 
@@ -64,7 +66,7 @@ npm run build
 
 통합빌드, 실행을 하면
 
-![image-20220111141220010](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111141220010.png)
+![image-20220111141220010](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111141220010.png)
 
 와 같이 생성이 되는데 구동 명령어는 
 
@@ -80,7 +82,7 @@ java -jar ssafy-web-project-1.0-SNAPSHOT.jar
 
 # git 정리
 
-![image-20220111144847108](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111144847108.png)
+![image-20220111144847108](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111144847108.png)
 
 ### Git이란? 소스코드를 효과적으로 관리하기 위해 개발된 '분산형 버전 관리 시스템'입니다. 원래는 Linux 소스코드를 관리할 목적으로 개발 되었습니다.
 
@@ -93,12 +95,12 @@ java -jar ssafy-web-project-1.0-SNAPSHOT.jar
 
 ### repository 란?  파일이나 폴더를 저장해 두는 곳
 
-![image-20220111145300299](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111145300299.png)
+![image-20220111145300299](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111145300299.png)
 
 - 원격 저장소(Remote Repository): 파일이 원격 저장소 전용 서버에서 관리되며 여러 사람이 함께 공유하기 위한 저장소입니다.
 - 로컬 저장소(Local Repository): 내 PC에 파일이 저장되는 개인 전용 저장소입니다.
 
-![image-20220111145342516](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111145342516.png)
+![image-20220111145342516](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111145342516.png)
 
 #### 저장소 만드는 법
 
@@ -114,7 +116,7 @@ java -jar ssafy-web-project-1.0-SNAPSHOT.jar
 
 - 최근 커밋부터 거슬러 올라가면 과거 변경 이력과 내용을 알 수 있다.
 
-![image-20220111145722234](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111145722234.png)
+![image-20220111145722234](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111145722234.png)
 
 ---
 
@@ -123,7 +125,7 @@ java -jar ssafy-web-project-1.0-SNAPSHOT.jar
 - Git 에서는 우리가 흔히 말하는 폴더를 '작업 트리'(Work Tree)
 - 작업 트리 사이에 존재하는 공간을 '인덱스'
 
-![image-20220111145914887](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111145914887.png)
+![image-20220111145914887](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111145914887.png)
 
 ##### Git의 '커밋' 작업은 '작업 트리'에 있는 변경 내용을 저장소에 바로 기록하는 것이 아니라 그 사이 공간인 '인덱스'에 파일 상태를 기록(stage - 스테이징 한다고 표현하기도 합니다)하게 되어 있습니다. 따라서 저장소에 변경 사항을 기록하기 위해서는, 기록하고자 하는 모든 변경 사항들이 '인덱스'에 존재해야 합니다.
 
@@ -135,35 +137,35 @@ java -jar ssafy-web-project-1.0-SNAPSHOT.jar
 
 ### 원숭이도 하는 커밋
 
-![image-20220111153332894](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111153332894.png)
+![image-20220111153332894](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111153332894.png)
 
-![image-20220111153833617](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111153833617.png)
+![image-20220111153833617](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111153833617.png)
 
-![image-20220111155034550](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111155034550.png)
+![image-20220111155034550](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111155034550.png)
 
 푸쉬하고
 
 클론을 해봄
 
-![image-20220111155224817](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111155224817.png)
+![image-20220111155224817](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111155224817.png)
 
 잘 진행되는 모습을 볼 수 있다.
 
 웹저장소에도 잘 푸쉬된 모습
 
-![image-20220111160454312](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111160454312.png)
+![image-20220111160454312](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111160454312.png)
 
-![image-20220111160735514](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111160735514.png)
+![image-20220111160735514](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111160735514.png)
 
 ---
 
 ### merge
 
-![image-20220111154155217](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111154155217.png)
+![image-20220111154155217](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111154155217.png)
 
 - 끌어온 저장소가 최신 버전이 아닌 경우, 즉 내가 pull 을 실행한 후 다른 사람이 push 를 하여 원격 저장소를 업데이트 해버린 경우에는 위의 그림과 같이 내 push 요청이 거부
 
-![image-20220111154229455](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220111154229455.png)
+![image-20220111154229455](C:\Users\multicampus\Desktop\공프\S06P11C101\readme.assets\image-20220111154229455.png)
 
 - 병합(merge)이라는 작업을 진행하여 다른 사람의 업데이트 이력을 내 저장소에도 갱신 해야함
 

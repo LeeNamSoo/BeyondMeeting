@@ -108,6 +108,7 @@ clone 코드를 가져와 임포트
     ```
     
     - [localhost:8080](http://localhost:8080) 에 접속하여 서비스 구동 확인
+
     
 4. 공통프로젝트 기획에 참고할 회의기법 조사
     
@@ -176,6 +177,7 @@ git push origin <브랜치이름>
 
 ### cmd 에서 mysql 실행하기
 환경변수 > 시스템 변수 > path에 아래처럼 bin 파일경로 추가해주기
-``` C:\Program Files\MySQL\MySQL Server 8.0\bin 
+```bash
+ C:\Program Files\MySQL\MySQL Server 8.0\bin 
 ```
 

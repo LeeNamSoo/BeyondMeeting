@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title> Beyond Meeting </title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <h1>Beyond Meeting</h1>
+    <div class="row">
+        <div class="col-md-6">
+           {{^userName}}
+             <!--  <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a> -->
+               <a href="/oauth2/authorization/naver" class="btn btn-success active" role="button">Naver Login</a>
+           {{/userName}}
+        </div>
+    </div>
+</body>
+</html>

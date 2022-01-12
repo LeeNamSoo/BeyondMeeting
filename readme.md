@@ -90,7 +90,7 @@ java -jar ssafy-web-project-1.0-SNAPSHOT.jar
 
 ---
 
-# git 정리
+# git 정리(01.11 - branch 제작 및 커밋 완료)
 
 ![image-20220111144847108](readme.assets/image-20220111144847108.png)
 
@@ -178,5 +178,10 @@ java -jar ssafy-web-project-1.0-SNAPSHOT.jar
 ![image-20220111154229455](readme.assets/image-20220111154229455.png)
 
 - 병합(merge)이라는 작업을 진행하여 다른 사람의 업데이트 이력을 내 저장소에도 갱신 해야함
-
 - 만약 병합하지 않은 채로 이력을 덮어쓰게 되면 다른 사람이 push 한 업데이트 내역(그림의 커밋C)이 사라져 버리기 때문
+
+---
+
+## 내 프로젝트 git에 적용!!!
+
+![image-20220112155518823](readme.assets/image-20220112155518823.png)

@@ -484,3 +484,93 @@ export default App;
 ```
 
 이렇게 분리 시켜 준다면 한 기능에 오류가 생기거나 수정할 사항이 발생했을 때 기능이 얽히지 않아 유지 보수가 매우 편리해 진다.
+
+
+
+### State
+
+앱이 내부적으로 사용하는 구조를 갖기 위해서 상위 컴포넌트의 `state`를 하위 컴포넌트의 `props`로 데이터를 전달해 준다. 아래와 같이 수정해 줄 수 있다.
+
+```javascript
+// App.js
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      header:{title:'WEB', sub:'World Wide Web!'}
+    }
+  }
+  render () {
+    return (
+      <div className="App">
+        <Header 
+          title={this.state.header.title}
+          sub={this.state.header.sub}
+        />
+        <Navbar/>
+        <Article title="HTML" desc="HTML is HyperText Markup Language."/>
+      </div>
+    );
+  }
+}
+
+```
+
+
+
+### Key
+
+`Navbar`도 변경해 보자. 리스트로 여러가지의 데이터를 받고 있기 때문에 주의해야 할 점이 있다. 각 리스트에 `key`값을 주어 React 내부에서 처리가 원활하도록 하자.
+
+```javascript
+// App.js
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      header:{title:'WEB', sub:'World Wide Web!'},
+      articles:[
+        {id:1, title:'HTML', desc:'HTML is HyperText Markup Language.'},
+        {id:2, title:'CSS', desc:'CSS is for desgin.'},
+        {id:3, title:'JavaScript', desc:'JavaScript is for interactive.'},
+      ]
+    }
+  }
+  render () {
+    return (
+      <div className="App">
+        <Header 
+          title={this.state.header.title}
+          sub={this.state.header.sub}
+        />
+        <Navbar data={this.state.articles}/>
+        <Article title="HTML" desc="HTML is HyperText Markup Language."/>
+      </div>
+    );
+  }
+}
+
+// Navbar.js
+
+class Navbar extends Component {
+  render () {
+    var lists = [];
+    var data = this.props.data;
+    var i = 0;
+    while(i < data.length) {
+      lists.push(<li key={data[i].id}><a href={"/content/"+data[i].id}>{data[i].title}</a></li>);
+      i = i + 1;
+    }
+    return (
+      <nav>
+        <ul>
+          {lists}
+        </ul>
+      </nav>
+    );
+  }
+}
+```
+

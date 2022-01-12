@@ -28,9 +28,6 @@
   - JWT Authentication
   - REST API
 * 참조 리소스
-  * Vuetify: 디자인 전반 적용
-  * Vue Argon Design System: 디자인 전반 적용
-  * Vue Black Dashboard Pro(유료): 캘린더 컴포넌트 사용
   * AR Core: 구글에서 제공하는 AR 지원 라이브러리. 이미지 인식 및 오버레이 영상에 활용
   * Color Thief: 이미지 색상 추출 라이브러리. 커버 사진 색상 추출 및 배경 변경에 활용
   * Animation.css: CSS 애니메이션 지원 라이브러리. 메인 페이지 진입 애니메이션에 활용
@@ -259,4 +256,20 @@
 - 사람수에 따른 인원 분배를 고안해야 한다.
 - 각 역할군의 정보를 보여줄 때 유저 편의성이 중요하다.
 
-## React
+## 와이어 프레임 제작 페이지
+
+### 메인페이지
+
+#### 로그인 전
+
+![loggedout](README.assets/loggedout.png)
+
+#### 로그인 후
+
+![loggedin](README.assets/loggedin.png)
+
+#### index
+
+![main](README.assets/main-16419638583951.png)
+
+## [React](/react.md)

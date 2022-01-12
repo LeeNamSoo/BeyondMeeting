@@ -181,12 +181,88 @@ java -jar ssafy-web-project-1.0-SNAPSHOT.jar
 - 병합(merge)이라는 작업을 진행하여 다른 사람의 업데이트 이력을 내 저장소에도 갱신 해야함
 - 만약 병합하지 않은 채로 이력을 덮어쓰게 되면 다른 사람이 push 한 업데이트 내역(그림의 커밋C)이 사라져 버리기 때문
 
-<<<<<<< HEAD
+
 ---
 
 ## 내 프로젝트 git에 적용!!!
 
 ![image-20220112155518823](readme.assets/image-20220112155518823.png)
 =======
-- 만약 병합하지 않은 채로 이력을 덮어쓰게 되면 다른 사람이 push 한 업데이트 내역(그림의 커밋C)이 사라져 버리기 때문
->>>>>>> d0f7e264f16ab931d1a49d5b874d801f88b56c7b
+---
+
+# 01.12 (오후) - react 로 정한 후부터 react 공부중
+
+### 환경설정 이후
+
+```
+npm start
+```
+
+를 통해 샘플 페이지 연동 해봄
+
+#### 이후 생활코딩 따라서 컴포넌트 제작해봄
+
+```javascript
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class Subject extends Component {
+  render () {
+    return (
+      <header>
+        <h1>{this.props.title}</h1>
+        {this.props.sub}
+      </header>
+    );
+  }
+}
+
+class TOC extends Component {
+  render (){
+    return (
+      <nav>
+        <ul>
+          <li><a href="1.html">HTML</a></li>
+          <li><a href="2.html">CSS</a></li>
+          <li><a href="3.html">Javascript</a></li>
+        </ul>
+      </nav>
+    );
+  }
+}
+
+class CONTENT extends Component {
+  render() {
+    return (
+      <article>
+        <h2>HTML</h2>
+        HTML is HyperText Markup Language.
+      </article>
+    );
+  }
+}
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Subject title="WEB" sub="world wide web"></Subject>
+        <Subject title="HTML" sub="HTML is HyperText Markup Language."></Subject>
+        <TOC></TOC>
+        <CONTENT></CONTENT>
+      </div>
+    );
+  }
+}
+export default App;
+
+```
+
+
+
+
+
+![image-20220112160703280](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220112160703280.png)
+
+### 우측과 같은 모습으로 컴포넌트가 활성화 되는 것을 볼수있다.

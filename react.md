@@ -1,7 +1,5 @@
 ## React
 
-우리는 Vue.js를 사용하는 대신, 현재 프론트엔드 분야에서 가장많이 사용되는 React로 제작하기로 결정하였다. 그를 위해서 React에 대해 공부해 보는 시간을 가지게 되었다.
-
 참조 : [생활코딩-React](https://www.youtube.com/playlist?list=PLuHgQVnccGMCRv6f8H9K5Xwsdyg4sFSdi)
 
 
@@ -573,4 +571,69 @@ class Navbar extends Component {
   }
 }
 ```
+
+
+
+### state, props, render
+
+이번에는 위의 모든 기능을 활용해 보자. 부모 컴포넌트의 `state`값에 따라 다른 데이터를 `props`로 받아와 `render`하는 실습을 해 보았다.
+
+```javascript
+// App.js
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: 'welcome',
+      header: {title:'WEB', sub:'World Wide Web!'},
+      welcome: {title:'Welcome', desc:'Hello, React!!'},
+      articles:[
+        {id:1, title:'HTML', desc:'HTML is HyperText Markup Language.'},
+        {id:2, title:'CSS', desc:'CSS is for desgin.'},
+        {id:3, title:'JavaScript', desc:'JavaScript is for interactive.'},
+      ]
+    }
+  }
+  render () {
+    console.log('App render')
+    var _title, _desc = null;
+    if (this.state.mode === 'welcome') {
+      _title = this.state.welcome.title;
+      _desc = this.state.welcome.desc;
+    } else if (this.state.mode === 'read') {
+      _title = this.state.articles[0].title;
+      _desc = this.state.articles[0].desc;
+    }
+    return (
+      <div className="App">
+        <Header 
+          title={this.state.header.title}
+          sub={this.state.header.sub}
+        />
+        <Navbar data={this.state.articles}/>
+        <Article title={_title} desc={_desc}/>
+      </div>
+    );
+  }
+}
+```
+
+`render`함수와 `state`를 살펴 보면 `state.mode`값에 따라 다른 데이터를 받아와 props에 건네 주는 것을 알 수 있다.
+
+#### welcome
+
+![image-20220113112519018](react.assets/image-20220113112519018.png)
+
+`state.mode`가 welcome인 경우 state 내부의 welcome의 title과 desc를 각각 받아와 `props`에 건네준다. 따라서 위와 같은 화면이 출력된다.
+
+#### read
+
+![image-20220113112506404](react.assets/image-20220113112506404.png)
+
+`state.mode`가 read인 경우 state 내부의 articles의 0번째의 title과 desc를 각각 받아와 `props`에 건네준다. 따라서 위와 같은 화면이 출력된다. 이 경우에는 동적으로 변환시켜 navbar의 링크를 클릭할 때 다르게 변화를 해줄 수 있겠다.
+
+
+
+### event
 

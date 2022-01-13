@@ -131,11 +131,11 @@
   - 여섯 색깔 모자 기법을 담당하여 제작
   - 1안 : 구현의 어려운 점이 있지만 가시성 높은 안
 
-  ![six1](./README.assets/six_hat1.jpg)
+  ![six1](./README.assets/six_hat1.JPG)
 
   - 2안 : 구현의 난이도와 가시성 절충, 깔끔함이 더 있음
 
-  ![six2](./README.assets/six_hat2.jpg)
+  ![six2](./README.assets/six_hat2.JPG)
 
   - 개선점
     1. 역할에 따른 배경색 변경

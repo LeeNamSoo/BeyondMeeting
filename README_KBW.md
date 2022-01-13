@@ -150,7 +150,7 @@
 
   - React 공부 인증
 
-  ![reactstudy](./README.assets/react학습.jpg)
+  ![reactstudy](./README.assets/react학습.JPG)
 
   - React사용을 위한 설치와 환경설정
 

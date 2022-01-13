@@ -266,3 +266,62 @@ export default App;
 ![image-20220112160703280](C:\Users\multicampus\AppData\Roaming\Typora\typora-user-images\image-20220112160703280.png)
 
 ### 우측과 같은 모습으로 컴포넌트가 활성화 되는 것을 볼수있다.
+
+---
+
+# 01.13(react)
+
+```react
+import React, { Component } from 'react';
+import TOC from "./components/TOC";
+import CONTENT from './components/CONTENT';
+import Subject from './components/Subject';
+
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Subject title="WEB" sub="world wide web"></Subject>
+        <Subject title="HTML" sub="HTML is HyperText Markup Language."></Subject>
+        <TOC></TOC>
+        <CONTENT></CONTENT>
+      </div>
+    );
+  }
+}
+export default App;
+
+```
+
+app.js에서 컴포넌트를 분기하여 컴포넌트 폴더의 컴포넌트들을 import 해준 모습의 app.js!!!
+
+![image-20220113115407867](readme.assets/image-20220113115407867.png)
+
+위와 같이 components 폴더를 src 의 하위 폴더로 생성하였기 때문에 import from 의 위치가 src/components/~
+
+로 작성이 된다.
+
+
+
+분기된 컴포넌트.js 파일의 예시를 보게 되면
+
+```react
+import React, {Component} from "react";
+
+class Subject extends Component {
+  render (){
+    return (
+      <header>
+        <h1>{this.props.title}</h1>
+        {this.props.sub}
+      </header>
+    );
+  }
+}
+
+export default Subject
+```
+
+Subject.js 의 모습이다.

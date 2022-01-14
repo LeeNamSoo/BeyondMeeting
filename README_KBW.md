@@ -389,3 +389,17 @@
 - 회의 생성하는 과정의 flowchart와 조건 분기점
 
   ![meetings_generate](./README.assets/회의생성flowchart.jpg)
+
+- 로고 디자인 시안 제작
+
+  - Beyond meetings라는 이름을 기반으로 아이콘을 합쳐서 제작하는 방향으로 설정했다.
+
+  - 시안 1안
+
+    ![ver1](./README.assets/로고시안1.JPG)
+
+  - 시안 2안
+
+    ![ver2](./README.assets/로고시안2.JPG)
+
+  - 색상은 'Bey', 'M', 't'에 색상을 변경하여 veriation을 주어 팀과 논의하여 선정하려고 한다.

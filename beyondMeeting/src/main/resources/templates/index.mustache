@@ -6,14 +6,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
     <h1>Beyond Meeting</h1>
     <div class="row">
         <div class="col-md-6">
+
+            {{#userName}}
+                Logged in as: <span id="user">{{userName}}</span>
+                <a href="/logout" class="btn btn-info active" role ="button">Logout</a>
+            {{/userName}}
+
             {{^userName}}
-                <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
-                <a href="/oauth2/authorization/naver" class="btn btn-success active" role="button">Naver Login</a>
+                <a href="/oauth2/authorization/google" class="btn btn-primary" id="btn-save" >Google Login</a>
+                <a href="/oauth2/authorization/naver" class="btn btn-success " >Naver Login</a>
+                <a href="/oauth2/authorization/kakao" class= "btn btn-warning" >Kakao Login</a>
+
             {{/userName}}
         </div>
     </div>

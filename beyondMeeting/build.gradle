@@ -28,6 +28,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client' //oauth2 의존성추가
 	implementation 'org.springframework.boot:spring-boot-starter-mustache' // mustache 의존성추가
+	implementation 'org.springframework.session:spring-session-jdbc' // DB에서 session 관리하기
 }
 
 test {

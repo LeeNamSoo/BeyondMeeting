@@ -20,6 +20,7 @@ public class IndexController {
         if(user != null){
             model.addAttribute("userName", user.getName());
         }
+     //   httpSession.setMaxInactiveInterval(1); // 세션유지시간 1초
         return "index";
     }
 }

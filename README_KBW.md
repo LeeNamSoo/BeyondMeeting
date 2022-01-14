@@ -384,7 +384,7 @@
 
 - 피드백을 반영하며 새롭게 flowchart와 조건 분기점 작성
 
-  ![flowchart](./README.assets/flowchart.jpg)
+  ![flowchart](./README.assets/Flowchart.jpg)
 
 - 회의 생성하는 과정의 flowchart와 조건 분기점
 

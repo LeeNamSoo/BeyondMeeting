@@ -156,3 +156,23 @@ https://m.blog.naver.com/ksk3007/30000705200
 ![image-20220112154729192](readme.assets/image-20220112154729192.png)
 
 화면 구성으로는 현재 모습이 조금 나은듯 보임(내 의견)
+
+---
+
+## 01.13
+
+커스터마이징이 가능한 모자를 이용해 방의 이용을 변화시킨다.
+
+![image-20220114100205319](readme_jyp_기획.assets/image-20220114100205319.png)
+
+처음 페이지를 접한 유저가 웹 입장후부터 유저의 활동을 상세히 작성해 보았다.
+
+![image-20220114100357435](readme_jyp_기획.assets/image-20220114100357435.png)
+
+![KakaoTalk_20220114_101422507](readme_jyp_기획.assets/KakaoTalk_20220114_101422507.jpg)![image-20220114100414084](readme_jyp_기획.assets/image-20220114100414084.png)
+
+![KakaoTalk_20220114_101422507_01](readme_jyp_기획.assets/KakaoTalk_20220114_101422507_01.jpg)
+
+![KakaoTalk_20220114_101422507_02](readme_jyp_기획.assets/KakaoTalk_20220114_101422507_02.jpg)
+
+![KakaoTalk_20220114_101422507_03](readme_jyp_기획.assets/KakaoTalk_20220114_101422507_03.jpg)

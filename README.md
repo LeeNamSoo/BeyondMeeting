@@ -52,5 +52,6 @@
 
 <!-- 자유 양식 -->
 
-## 프로젝트 상세 설명
-
+## 프로젝트 상세 설명 
+노션 회의록 https://www.notion.so/5e234d46de2e4f1d91eeacf7d93120f3?v=c28cd0713b734e3095840ebf3e97f391 
+노션 팀작업 https://www.notion.so/ca40b597cfb7467fab3173e34be14a3b?v=acb63c80692140d090bc949f3ab05508

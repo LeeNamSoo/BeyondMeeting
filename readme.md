@@ -1,3 +1,7 @@
+### 회의록 (notion)
+
+- https://www.notion.so/5e234d46de2e4f1d91eeacf7d93120f3?v=025e3ca9b40140b6b6be782b3e4e64c5
+
 ### mysql 환경변수 설정하는 법
 
 - https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=jin93hj&logNo=221118160512

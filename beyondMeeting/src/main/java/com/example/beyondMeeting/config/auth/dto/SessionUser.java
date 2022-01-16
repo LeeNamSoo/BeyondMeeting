@@ -18,3 +18,5 @@ public class SessionUser implements Serializable {
     }
 
 }
+// User 클래스를 그대로 사용하지 않고 SessionUser클래스로 사용하는 이유는?
+// 직렬화?!
